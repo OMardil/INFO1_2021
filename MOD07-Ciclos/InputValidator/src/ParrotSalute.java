@@ -14,9 +14,12 @@ public class ParrotSalute {
         String salute = "";
         for(int i=0; i<groupSize; i++){
             salute += "Hi!"; // salute = salute + "Hi!";
-            salute += "-";
+            if (i<groupSize-1){
+                salute += "-";
+            }
         }
 
+        //salute = salute.substring(0,salute.length()-1);
         System.out.println(salute);
         keyboard.close();
 
